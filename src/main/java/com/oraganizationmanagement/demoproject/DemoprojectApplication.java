@@ -31,6 +31,7 @@ public class DemoprojectApplication {
 		
 		System.out.println("Hii One");
 		System.out.println("Bhuvad");
+		System.out.println("Bhuvad one");
 		SpringApplication.run(DemoprojectApplication.class, args);
 	}
 	

@@ -30,6 +30,7 @@ public class DemoprojectApplication {
 	public static void main(String[] args) {
 		
 		System.out.println("Hii One");
+		System.out.println("Bhuvad");
 		SpringApplication.run(DemoprojectApplication.class, args);
 	}
 	

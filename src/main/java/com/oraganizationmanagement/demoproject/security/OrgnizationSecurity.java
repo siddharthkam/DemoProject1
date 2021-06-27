@@ -27,11 +27,11 @@ public class OrgnizationSecurity extends WebSecurityConfigurerAdapter {
 		.antMatchers("/greet").hasAnyRole("USER", "ADMIN")
 		.antMatchers("/addBook").hasAnyRole("USER", "ADMIN")
 		.antMatchers("/addNewEmployee").hasAnyRole("ADMIN")
+		.antMatchers("/Book").hasAnyRole("ADMIN")
+		.antMatchers("/Books").hasAnyRole("ADMIN")
+		.antMatchers("/BooksBYID/**").hasAnyRole("ADMIN")
 		/*.anyRequest().authenticated().and().formLogin().permitAll().and().httpBasic();*/
 		.anyRequest().authenticated().and().formLogin().permitAll().and().logout().permitAll();
-		
-		
-		
        http.csrf().disable();
 		
 		/*http.authorizeRequests().antMatchers("/").hasRole("USER")
